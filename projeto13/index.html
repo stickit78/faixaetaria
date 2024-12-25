@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faixa Etária</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Determinar a Faixa Etária</h1>
+
+    <form id="age-form">
+      <label for="age">Idade:</label>
+      <input type="number" id="age" name="age" required min="0" placeholder="insere a tua idade">
+      <button type="submit">Ver Faixa Etária</button>
+    </form>
+
+    <div id="result">
+      <h2>Resultado:</h2>
+      <p id="age-group"></p>
+      <img id="age-image" src="" alt="">
+    </div>
+
+    <h2>Tabela de Faixas Etárias</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Faixa Etária</th>
+          <th>Intervalo de Idades</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Bebé</td><td>0 - 2 anos</td></tr>
+        <tr><td>Criança</td><td>3 - 11 anos</td></tr>
+        <tr><td>Adolescente</td><td>12 - 16 anos</td></tr>
+        <tr><td>Jovem Adulto</td><td>17 - 17 anos</td></tr>
+        <tr><td>Adulto</td><td>18 - 49 anos</td></tr>
+        <tr><td>Adulto de Meia Idade</td><td>50 - 65 anos</td></tr>
+        <tr><td>Idoso</td><td>66 - 99 anos</td></tr>
+        <tr><td>Lendário</td><td>100 - 130 anos</td></tr>
+        <tr><td>Imortal</td><td>Acima de 130 anos</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
